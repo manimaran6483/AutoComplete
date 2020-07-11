@@ -9,7 +9,7 @@
 body{
 	height:100vh;
 	display:flex;
-	align-items:center;
+	
 	justify-content:center;
 	
 }
@@ -17,6 +17,7 @@ body{
 	position:relative;
 	width:50px;
 	height:50px;
+	top:100px;
 	text-align:center;
 	line-height:55px;
 	background-color:rgb(16,141,190);
@@ -43,7 +44,7 @@ body{
 	font-size:larger;
 	top:8px;
 	left:20px;
-	widht:230px;
+	width:230px;
 	border:none;
 }
 .search input{
@@ -52,4 +53,38 @@ body{
 .search i {
 	color:#fff;
 	font-size:22px;
+}
+#match-list{
+	padding-left: 20px;
+	padding-right:20px;
+
+}
+.container-background{
+	display: flex;
+	padding-left:8px;
+	padding-right:8px;
+	cursor:pointer;
+	background-color: #CCC;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	transition: all 0.2s ease-in-out;
+}
+.list-container{
+	position:absolute;
+	background: white;
+	width: 400px;
+	z-index:100;
+	top:150px;
+	left:500px;
+	border-radius:30px;
+	bottom: 320px;
+	display:flex;
+}
+.list
+{
+	padding-left: 20px;
+	padding-right:20px;
+	overflow-y:scroll;
+	flex-grow:1;
+	
 }
